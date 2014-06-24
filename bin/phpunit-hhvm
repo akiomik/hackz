@@ -1,0 +1,3 @@
+#!/bin/sh
+
+hhvm `dirname $0`/../vendor/bin/phpunit "$@"
