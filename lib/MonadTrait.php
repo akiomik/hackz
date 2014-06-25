@@ -1,6 +1,6 @@
 <?hh
 
-namespace Hackz;
+namespace Akiomik\Hackz;
 
 trait MonadTrait<Ta> {
     require implements Functor<Ta>;

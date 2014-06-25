@@ -1,8 +1,8 @@
 <?hh
 
-namespace Hackz\Test;
+namespace Akiomik\Hackz\Test;
 
-use \Hackz\Option;
+use \Akiomik\Hackz\Option;
 
 class OptionTest extends \PHPUnit_Framework_TestCase {
     public function setup(): void {

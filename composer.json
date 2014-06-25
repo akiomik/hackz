@@ -4,13 +4,13 @@
         "phpunit/phpunit": "4.1.*"
     },
     "autoload": {
-        "psr-0": {
-            "Hackz": "lib/"
+        "psr-4": {
+            "Akiomik\\Hackz\\": "lib/"
         }
     },
     "autoload-dev": {
-        "psr-0": {
-            "Hackz\\Test": "tests/"
+        "psr-4": {
+            "Akiomik\\Hackz\\Test\\": "tests/"
         }
     }
 }

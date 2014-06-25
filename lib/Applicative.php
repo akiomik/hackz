@@ -1,6 +1,6 @@
 <?hh
 
-namespace Hackz;
+namespace Akiomik\Hackz;
 
 interface Applicative<Ta> {
     public static function pure(Ta $a): this;

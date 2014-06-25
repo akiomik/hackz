@@ -1,6 +1,6 @@
 <?hh
 
-namespace Hackz;
+namespace Akiomik\Hackz;
 
 interface Functor<Ta> {
     public function map<Tb>((function(Ta): Tb) $f): this;

@@ -1,6 +1,6 @@
 <?hh
 
-namespace Hackz;
+namespace Akiomik\Hackz;
 
 interface Monad<Ta> {
     public function bind((function(Ta): Monad<Ta>) $f): this;

@@ -1,9 +1,9 @@
 <?hh
 
-namespace Hackz\Option;
+namespace Akiomik\Hackz\Option;
 
-use \Hackz\Option;
-use \Hackz\Applicative;
+use \Akiomik\Hackz\Option;
+use \Akiomik\Hackz\Applicative;
 
 final class Some<Ta> extends Option<Ta> {
     public function __construct(private Ta $x) {}
