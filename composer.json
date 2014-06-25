@@ -1,8 +1,15 @@
 {
     "name": "akiomik/hackz",
+    "description": "A library of hhvm/hack for functional programming.",
+    "keywords": ["hack", "hhvm", "monad"],
+    "license": "MIT",
     "require-dev": {
         "phpunit/phpunit": "4.1.*"
     },
+    "authors": [{
+        "name": "Akiomi Kamakura",
+        "email": "akiomik@gmail.com"
+    }],
     "autoload": {
         "psr-4": {
             "Akiomik\\Hackz\\": "lib/"
