@@ -3,7 +3,7 @@
 namespace Akiomik\Hackz\Option;
 
 use \Akiomik\Hackz\Option;
-use \Akiomik\Hackz\Applicative;
+use \Akiomik\Hackz\Apply;
 
 final class Some<Ta> extends Option<Ta> {
     public function __construct(private Ta $x) {}
@@ -12,7 +12,7 @@ final class Some<Ta> extends Option<Ta> {
        return new Some($f($this->x));
     }
 
-    public function ap<Tb>(Applicative<(function(Ta): Tb)> $f): Applicative<Tb> {
+    public function ap<Tb>(Apply<(function(Ta): Tb)> $f): Apply<Tb> {
         return $f->map($ff ==> $ff($this->x));
     }
 

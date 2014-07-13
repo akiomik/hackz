@@ -5,8 +5,9 @@ namespace Akiomik\Hackz;
 use \Akiomik\Hackz\Option\Some;
 use \Akiomik\Hackz\Option\None;
 
-abstract class Option<Ta> implements Functor<Ta>, Applicative<Ta>, Monad<Ta> {
+abstract class Option<Ta> implements Functor<Ta>, Apply<Ta>, Applicative<Ta>, Monad<Ta> {
     use FunctorTrait<Ta>;
+    use ApplyTrait<Ta>;
     use ApplicativeTrait<Ta>;
     use MonadTrait<Ta>;
 
