@@ -2,7 +2,8 @@
 
 namespace Akiomik\Hackz;
 
-trait MonadTrait<Ta> {
+trait MonadTrait<Ta>
+{
     require implements Functor<Ta>;
     require implements Applicative<Ta>;
     require implements Monad<Ta>;
@@ -12,6 +13,9 @@ trait MonadTrait<Ta> {
     /**
      * alias for bind
      */
-    public function flatMap((function(Ta): Monad<Ta>) $f): this { return bind($f); }
+    public function flatMap((function(Ta): Monad<Ta>) $f): this
+    {
+        return bind($f);
+    }
 }
 

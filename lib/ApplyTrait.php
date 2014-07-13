@@ -2,7 +2,8 @@
 
 namespace Akiomik\Hackz;
 
-trait ApplyTrait<Ta> {
+trait ApplyTrait<Ta>
+{
     require implements Functor<Ta>;
     require implements Apply<Ta>;
 

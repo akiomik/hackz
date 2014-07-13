@@ -2,7 +2,8 @@
 
 namespace Akiomik\Hackz;
 
-trait ApplicativeTrait<Ta> {
+trait ApplicativeTrait<Ta>
+{
     require implements Functor<Ta>;
     require implements Apply<Ta>;
     require implements Applicative<Ta>;
@@ -12,7 +13,8 @@ trait ApplicativeTrait<Ta> {
     /**
      * alias for pure
      */
-    public static function point(Ta $a): this {
+    public static function point(Ta $a): this;
+    {
         return self::pure($a);
     }
 }
