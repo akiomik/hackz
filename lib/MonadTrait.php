@@ -15,7 +15,7 @@ trait MonadTrait<Ta>
      */
     public function flatMap((function(Ta): Monad<Ta>) $f): this
     {
-        return bind($f);
+        return $this->bind($f);
     }
 }
 

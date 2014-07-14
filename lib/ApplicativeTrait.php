@@ -15,7 +15,7 @@ trait ApplicativeTrait<Ta>
      */
     public static function point(Ta $a): this
     {
-        return self::pure($a);
+        return static::pure($a);
     }
 }
 

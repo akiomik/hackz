@@ -16,17 +16,17 @@ abstract class Option<Ta>
     use ApplicativeTrait<Ta>;
     use MonadTrait<Ta>;
 
-    public static function pure(Ta $a): Option<Ta>
+    public static function pure(Ta $a): this
+    {
+        return static::some($a);
+    }
+
+    public static function some(Ta $a): Some<Ta>
     {
         return new Some($a);
     }
 
-    public static function some(Ta $a): Option<Ta>
-    {
-        return new Some($a);
-    }
-
-    public static function none(): Option<Ta>
+    public static function none(): None<Ta>
     {
         return new None();
     }
