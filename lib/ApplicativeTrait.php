@@ -13,7 +13,7 @@ trait ApplicativeTrait<Ta>
     /**
      * alias for pure
      */
-    public static function point(Ta $a): this;
+    public static function point(Ta $a): this
     {
         return self::pure($a);
     }
