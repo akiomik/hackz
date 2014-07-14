@@ -1,6 +1,8 @@
 hackz
 =====
 
+[![Build Status](https://travis-ci.org/akiomik/hackz.svg?branch=master)](https://travis-ci.org/akiomik/hackz)
+
 A library of hhvm/hack for functional programming.
 
 ## Installation
