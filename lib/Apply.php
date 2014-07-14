@@ -2,8 +2,8 @@
 
 namespace Akiomik\Hackz;
 
-interface Apply<Ta>
+abstract class Apply<Ta> extends Functor<Ta>
 {
-    public function ap<Tb>(Apply<(function(Ta): Tb)> $f): Apply<Tb>;
+    abstract public function ap<Tb>(Apply<(function(Ta): Tb)> $f): Apply<Tb>;
 }
 

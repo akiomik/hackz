@@ -2,10 +2,16 @@
 
 namespace Akiomik\Hackz;
 
-interface Applicative<Ta>
+abstract class Applicative<Ta> extends Apply<Ta>
 {
-    public static function pure(Ta $a): this;
+    abstract public static function pure(Ta $a): this;
 
-    public static function point(Ta $a): this;
+    /**
+     * alias for pure
+     */
+    public static function point(Ta $a): this
+    {
+        return static::pure($a);
+    }
 }
 

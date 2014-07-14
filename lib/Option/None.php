@@ -10,7 +10,7 @@ final class None<Ta> extends Option<Ta>
 {
     public function map<Tb>((function(Ta): Tb) $f): None<Tb>
     {
-        return new None();
+        return $this;
     }
 
     public function ap<Tb>(Apply<(function(Ta): Tb)> $f): None<Tb>
